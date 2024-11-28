@@ -1,0 +1,289 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(0deg, #1b1b1b -0.06%, #3c4147 99.94%);
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Espacio entre el logo/nombre y el menú */
+}
+.logo img {
+    height: 40px; 
+    margin-right: 10px; /* Espacio entre el logo y el nombre */
+}
+
+nav {
+    display: flex;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    display: flex;
+}
+.social-icons a {
+    color: white;
+    margin-left: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* banner */
+.banner {
+    background-size: cover;
+    position: relative; 
+    text-align: center; 
+}
+
+.banner img {  
+    width: 100%; 
+    height: auto; 
+}
+
+
+.overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
+    border-radius: 10px;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+
+#seccion1, #seccion2, #seccion3, #seccion4{
+    color:white
+}
+
+/* Estilos sección 1 */
+.button-container {
+    display: flex; 
+    justify-content: space-around; 
+    margin: 0px;
+    flex: 1;
+}
+
+.custom-button {
+    position: relative; 
+    background-color: transparent; 
+    border: none; 
+    padding: 0;
+    cursor: pointer; 
+    flex: 1; 
+    overflow: hidden; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.custom-button:hover {
+    background-color: #c51f27; 
+    transform: translateY(-5px); /* Elevar botón ligeramente hacia arriba */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.button-image {
+    width: 100%; 
+    height: auto; 
+}
+
+.button-text {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    transition: background-color 0.3s ease; 
+}
+
+.custom-button:hover .button-text {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+
+#btn1 {
+    margin-right:10px;
+}
+
+#btn2 {
+    margin-left:10px;
+}
+
+
+
+
+/* Estilos para los rectángulos verticales en sección 1 */
+.rectangulos-verticales {
+    display: flex; 
+    flex-direction: row;
+    flex: 1;
+}
+
+.rectangulo-vertical {
+    position: relative;
+    border: 0px;
+    background-color: transparent;
+    color: white; 
+    padding: 0px; 
+    flex: 1; 
+    cursor: pointer;
+    margin: 10px 5px; 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.rectangulo-vertical:hover {
+    background-color: #c51f27; 
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.rectangulo-vertical:first-child {
+    margin-left: 0px;
+}
+
+.rectangulo-vertical:last-child {
+    margin-right: 0px;
+}
+
+
+
+
+/* Estilos para la sección 2 */
+
+.rectangulos-seccion2 {
+    display: flex; 
+    width: 100%;
+}
+
+.rectangulo-nuevo {             
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 20px; 
+    flex: 1; 
+    margin-right: 10px; 
+}
+
+.rectangulo-nuevo:last-child {
+    margin-right: 0; 
+}
+
+.rectangulos-verticales-2{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.rectangulo-vertical-2{
+    border: 0px;
+    background-color: #9ba3aa;
+    color: white; 
+    padding: 20px; 
+    flex: 1; 
+    margin: 0px; 
+}
+
+.rectangulo-vertical-2:last-child{
+    margin-top: 5px;
+}
+
+/* Estilos para la sección 3 */
+.cuadrados-seccion3 {
+   display: flex; 
+   justify-content: space-between; 
+}
+
+.cuadrado {
+   background-color: #FF5722; 
+   color: white; 
+   width: 30%; 
+   padding: 20px; 
+   text-align: center; 
+   box-sizing: border-box; 
+}
+
+/* Estilos para la sección 4 */
+.rectangulos-seccion4 {
+   display: flex; 
+   justify-content: space-between; 
+   margin-top: 20px; 
+}
+
+.c2{
+    margin:0px 10px;
+}
+
+.rectangulo-nuevo-4 {
+   background-color: #673AB7; 
+   color: white;
+   padding: 20px;
+   flex: 1;
+}
+
+.rectangulo-nuevo-4:last-child{
+    margin-right: 0px;
+}
+
+.rectangulo-nuevo-4:first-child{
+    margin-left: 0px;
+}
+
+
+
+
+/* Dialog */
+#openModalBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-overlay {
+    display: none; /* Ocultar cuadro de diálogo */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.modal-content {
+    background-color: white; 
+    border-radius: 8px; 
+    padding: 20px; 
+    width: 75%; 
+    max-width: 90%; 
+}
+
+
